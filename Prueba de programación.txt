@@ -1,0 +1,12 @@
+﻿Prueba de programación
+1. “Escrapear” la página de comunicados de prensa de Facebook (https://newsroom.fb.com/news/),
+  y guardar el contenido en un dataframe de Pandas.
+  La información que nos interesa es el título, la fecha, el link y el texto completo de la nota.
+  Puedes guardar el dataframe en formato CSV.
+  Estaría bien que el programa tuviera la opción de extraer únicamente contenidos que salieron a partir de una fecha específica
+
+2. Bonus: Comparar el contenido que jalaste de la página de Facebook con las notas que vienen en el archivo “facebook_prs.csv”. Identificar notas que faltan en el archivo, tanto como notas del archivo que no aparecen en la página oficial.
+
+Cuando termines, puedes mandar los resultados tanto como tu código.
+
+Suerte!
