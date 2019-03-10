@@ -5,7 +5,8 @@
   Puedes guardar el dataframe en formato CSV.
   Estaría bien que el programa tuviera la opción de extraer únicamente contenidos que salieron a partir de una fecha específica
 
-2. Bonus: Comparar el contenido que jalaste de la página de Facebook con las notas que vienen en el archivo “facebook_prs.csv”. Identificar notas que faltan en el archivo, tanto como notas del archivo que no aparecen en la página oficial.
+2. Bonus: Comparar el contenido que jalaste de la página de Facebook con las notas que vienen en el archivo “facebook_prs.csv”.
+Identificar notas que faltan en el archivo, tanto como notas del archivo que no aparecen en la página oficial.
 
 Cuando termines, puedes mandar los resultados tanto como tu código.
 
