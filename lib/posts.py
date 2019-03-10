@@ -1,4 +1,5 @@
 from functional import seq
+from lib.soup import get_description_soup
 
 def get_post_text(post):
   post['description'] = post.get('description').find('div', class_='post-content')
@@ -16,3 +17,8 @@ def get_posts_from_year(soup):
   posts_info = (seq(posts)
     .map(lambda post: get_info_from_year_post(post)).to_list())
   return posts_info
+
+def add_description_to_dict(year_posts):
+  return (seq(year_posts)
+    .map(lambda post: get_description_soup(post))
+    .map(lambda post: get_post_text(post)))

@@ -4,18 +4,8 @@ from bs4 import BeautifulSoup
 from functional import seq
 
 from lib.archive import get_archive_list
-from lib.posts import get_posts_from_year, get_post_text
+from lib.posts import get_posts_from_year, get_post_text, add_description_to_dict
 from lib.soup import get_soup_from_link, get_description_soup
-
-# def get_description_soup(post):
-#   soup = get_soup_from_link(post.get('link'))
-#   post['description'] = soup
-#   return post
-
-def add_description_to_dict(year_posts):
-  return (seq(year_posts)
-    .map(lambda post: get_description_soup(post))
-    .map(lambda post: get_post_text(post)))
 
 fb_page = 'https://newsroom.fb.com/news'
 
