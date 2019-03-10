@@ -1,6 +1,10 @@
 from functional import seq
 from lib.soup import get_description_soup
 
+def filter_link_by_year(link, initialDate, endingDate):
+  link_year = int(link[-4:])
+  return initialDate["year"] <= link_year <= endingDate["year"]
+
 def get_post_text(post):
   post['description'] = post.get('description').find('div', class_='post-content')
   return post
