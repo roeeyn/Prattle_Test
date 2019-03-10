@@ -1,0 +1,2 @@
+pyfunctional
+BeautifulSoup4
