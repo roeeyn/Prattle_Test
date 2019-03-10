@@ -13,11 +13,16 @@ fb_page = 'https://newsroom.fb.com/news'
 page = urlopen(fb_page)
 soup = BeautifulSoup(page, 'html.parser')
 
-info_dictionary = (seq(get_archive_list(soup))
-  .map(lambda link_dict: get_soup_from_link(link_dict.get('link'))) # Sirve que la consulta es más sencilla y puedes filtrar por fecha
+print('Fetching data...')
+info_dictionary = (seq(get_archive_list(soup)) # Bring all years available in 'Archivo' section
+  .map(lambda link_dict: get_soup_from_link(link_dict.get('link'))) # While we fetch all years, it's better for filtering the years
   .map(lambda soup: get_posts_from_year(soup))
   .flat_map(lambda post: add_description_to_dict(post)))
+print('Finished fetching data')
 
+print('Started to create data Frame...')
 data_frame = pd.DataFrame(info_dictionary)
-print(data_frame)
+print('Finished creating data Frame')
+
+print('Saving data frame to csv...')
 data_frame.to_csv('posts.csv', encoding='utf-8')
