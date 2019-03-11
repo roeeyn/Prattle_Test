@@ -5,6 +5,6 @@
 - [x] Guardar el dataframe en formato CSV.
 - [x] Filtrar contenidos por Fecha (está dentro del código, **línea 16 y 17** del archivo ```app.py```)
 
-## Bonus
+## Bonus
 - [ ] Comparar el contenido que jalaste de la página de Facebook con las notas que vienen en el archivo “facebook_prs.csv”.
 - [ ] Identificar notas que faltan en el archivo, tanto como notas del archivo que no aparecen en la página oficial.
