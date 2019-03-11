@@ -13,7 +13,7 @@ page = urlopen(fb_page)
 soup = BeautifulSoup(page, 'html.parser')
 
 ####### FILTER DATES ##########
-initialDate = { "day": 31, "month": 12, "year": 2017 }
+initialDate = { "day": 31, "month": 12, "year": 1994 }
 endingDate = { "day": 1, "month": 12, "year": 2019 }
 ###############################
 
